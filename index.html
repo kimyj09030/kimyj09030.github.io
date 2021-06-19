@@ -4,11 +4,173 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<title>김유진 포트폴리오 사이트</title>
+
+<!-- css -->
+<link rel="stylesheet" href="./css/style.css">
+<!-- jquery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.min.js" integrity="sha512-7r/OesWXSCkeaAN9IA8BCzedivXu9M0eLGt+g+jzrvNHakOlxxqc9fknv4uRRvzfCQLmUh0LX2JpT2NcbyrOUA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/3.1.1/fullpage.css" integrity="sha512-YNAoslhy+76TbvBHwJYSkhl4G5g+CCHFYB447I7A73Mg4cPDUwoTdBqsX7arCKW9JTwvSPKDmLZiBdPVSkAyEQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.3/css/all.css" integrity="sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk" crossorigin="anonymous">
+<!-- js -->
+<script src="./js/script.js"></script>
+<link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+<title>김유진의 포트폴리오</title>
 </head>
 <body>
+    <header class="header" id="header">
+        <div class="header_inner flex">
+            <div class="nav_container">
+                <ul id="gnb" class="nav_list flex">
+                    <li data-menuanchor="firstPage" class="active"><a href="#firstPage">ABOUT</a></li>
+                    <li data-menuanchor="secondPage"><a href="#secondPage">SKILLS</a></li>
+                    <li data-menuanchor="thirdPage"><a href="#thirdPage">WORKS</a></li>
+                    <li data-menuanchor="fourthPage"><a href="#fourthPage">CONTACT</a></li>
+                </ul>
+            </div>
+            <div class="nav_btns flex">
+                <i class="uil uil-sun change-theme" id="buttonLight"></i>
+                <i class="uil uil-moon change-theme" id="buttonDark"></i>
+                <i class="uil uil-apps" id="navToggle"></i>
+            </div>
+        </div>
+    </header>
 
-        <h1>김유진 포트폴리오 사이트</h1>
-        <h1>aaatest</h1>
+    <div id="fullpage">
+        <div class="section intro" id="intro">
+            <h1 class="intro_title">PORTFOLIO</h1>
+            <h3 class="intro_subtitle">어디에나 잘 융화되는 디자이너 김유진입니다.</h3>
+            <a href="#firtstPage" class="more_box">Learn more</a>
+            <div class="footer_text flex">
+                <div class="name">
+                    <span>KIM YU JIN</span>
+                </div>
+                <div class="year">
+                    <span>2021</span>
+                </div>
+            </div>          
+        </div>
+
+        <div class="section about" id="contents">
+            <div class="contents_title">
+                <h3>ABOUT ME</h3>
+            </div>
+            <div class="inner">
+                <div class="about_contents">
+                    <div class="myintroduce_box">
+                        <div class="myimage_box">
+                            <img src="" alt="">
+                        </div>
+                        <div class="introduce_title">
+                            <h4>
+                                수용할 줄 아는 신입 <br>웹 디자이너 김유진입니다.
+                            </h4>
+                        </div>
+                        <div class="introduce_my_self">
+                            <p>안녕하세요. 수용할 줄 아는 신입 <br>웹 디자이너 김유진입니다. <br>항상 낮은 자세로 피드백을 겸허히 <br>받아들일 자신이 있으며 <br>고집 없이 유연한 사고와 태도로 <br>어디에서나 잘 녹아드는 <br>둥글둥글한 사람입니다.</p>
+                        </div>
+                    </div>
+                    <div class="profile_box">
+                        <div class="profile">
+                            <h3>PROFILE</h3>
+                            <P>김유진 KIM YU JIN</p>
+                            <p>1996.09.03</p>
+                            <p>010-2588-9548</p>
+                            <p>대구 북구 칠성동</p>
+                            </P>
+                        </div>
+                        <div class="profile">
+                            <h3>EDUCATION</h3>
+                                <P>2021.02 ~ 2021.07</p>
+                                <p>그린컴퓨터아트학원</p>
+                                <p>웹디자인 구직자 양성과정</p>
+                        </div>
+                        <div class="profile">
+                            <h3>LICENSE</h3>
+                            <P>2021.04 GTQ 그래픽기술자격 포토샵 1급</p>
+                            <p>2021.06 GTQI 그래픽기술자격 일러스트 1급</p>
+                        </div>
+                    </div>
+                    <div class="about_icons">
+                        <ul class="icons_list">
+                            <li class="icons_list_item">
+                                <div class="circle">
+                                    
+                                </div>
+                                <div class="webdesign_text">
+                                    <h3>WEB DESIGN</h3>
+                                    <p>사용자를 위한 디자인을 만들고</p>
+                                    <p>웹접근성을 준수하는</p>
+                                    <p>웹 디자이너입니다.</p>
+                                </div>
+                            </li>
+                            <li class="icons_list_item">
+                                <div class="square">
+                                </div>
+                                <div class="develope_text">
+                                    <h3>DEVELOPE</h3>
+                                    <p>웹표준을 지키며 html5,css,</p>
+                                    <p>javascript,jquery</p>
+                                    <p>를 다룹니다.</p>
+                                </div>
+                            </li>
+                            <li class="icons_list_item">
+                                <div class="diamond">
+                                </div>
+                                <div class="graphic_text">
+                                    <h3>GRAPHIC DESIGN</h3>
+                                    <p>캐릭터 디자인,일러스트,편집디자인 등</p>
+                                    <p>다양한 분야에서도 활약할 수 있는</p>
+                                    <p>다재다능한 디자이너입니다.</p>
+                                </div>
+                            </li>
+                            <li class="icons_list_item">
+                                <div class="skewsquare">
+                                </div>
+                                <div class="promote_text">
+                                    <h3>WEB DESIGN</h3>
+                                    <p>꾸준히 작업물을 만들며</p>
+                                    <p>항상 노력하고 발전하기 위하여</p>
+                                    <p>힘쓰는 디자이너입니다.</p>
+                                </div>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </div>
+       
+
+            <!-- <div class="slide"> Slide 1 </div> -->
+            <!-- <div class="slide"> Slide 2 </div> -->
+            <!-- <div class="slide"> Slide 3 </div> -->
+            <!-- <div class="slide"> Slide 4 </div> -->
+
+        </div>
+
+        <div class="section skills" id="contents">
+            <div class="contents_title">
+                <h3>SKILLS</h3>
+            </div>
+            
+            
+            
+            
+        </div>
+        <div class="section">
+            
+            
+            
+            
+        </div>
+        <div class="section">
+            
+
+
+
+        </div>
+        
+    </div>
+
 </body>
 </html>
