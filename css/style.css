@@ -473,5 +473,9 @@ body{
 
 .workstitle {
 text-align: center;
-
+position: relative;
+top: -40%;
+bottom: 0;
+left: 0;
+right: 0;
 }
