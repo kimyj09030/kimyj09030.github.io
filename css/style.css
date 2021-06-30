@@ -23,8 +23,6 @@
     --gray-color: #9b9b9b;
     --lightgray-color: #c9caca;
 
-    /* ------------typography-------------- */
-
 }
 
 /* common */
@@ -113,30 +111,60 @@ header {
 /* =========================  about  ============================= */
 
 .myintroduce_box {
+    margin-top: 3rem;
     display: inline-block;
     width: 350px;
     padding: 1rem;
 }
 .myimage_box {
     width: 300px;
-    height: 400px;
-    background: #b0b0b0;
+    height: 360px;
+    /* background: #bebaba; */
     margin: 0 auto;
 }
+.myimage_box img {
+    border-radius: 50%;
+}
+
 .introduce_title {
     color: var(--primary-color);
     font-weight: bold;
     font-size: 1.4rem;
     margin: 1rem;
+    padding-bottom: 1.3rem;
     text-align: center;
+    background: #ffffff;
 }
 .introduce_my_self {
     text-align: center;
+    background: #ffffff;
 }
-
-.profile_box {
+li i {
+    color: var(--primary-color);
+    text-align: center;
+    font-size: 4rem;
+    margin-top: 2.3rem;
 }
+li h3 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-weight: bold;
+}
+.diamond {
+    position: relative;
+}
+.diamond i {
+    position: relative;
+    left: -15%;
+    top: -11px;
+    margin-left: 2rem;
+    transform: rotate(-45deg);
+    
 
+}
+.skewsquare i {
+    transform: skew(-20deg);
+}
 /* =======================  contents  ============================= */
 
 #contents {
@@ -150,7 +178,9 @@ header {
     color: var(--primary-color);
     border-bottom: 15px solid #c9caca;
     font-style: italic;
-    
+    position: absolute;
+    top: 8%;
+    width: 50%;
 }
 
 .aboutme {
@@ -161,8 +191,7 @@ header {
 .profile_box {
     display: inline-block;
     margin: 0 auto;
-    vertical-align: top;
-    margin-left: 7.5rem;
+    margin-left: 8.5rem;
 }
 .profile {
     margin-bottom: 5rem;
@@ -178,6 +207,7 @@ header {
 
 .about_icons {
 display: inline-block;
+
 }
 
 .icons_list {
@@ -194,28 +224,34 @@ display: inline-block;
 }
 
 .circle {
-    border: 4px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
     border-radius: 50%;
     width: 150px;
     height: 150px;
     margin: 2rem auto;
+    background: #ffffff;
+
 }
 .square {
-    border: 4px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
     width: 150px;
     height: 150px;
     margin: 2rem auto;
+    background: #ffffff;
+
     
 }
 .diamond {
-    border: 4px solid var(--primary-color);
+    border: 8px solid var(--primary-color);
     width: 130px;
     height: 130px;
     transform: rotate(45deg);    
     margin: 3rem auto;
+    background: #ffffff;
 }
 .skewsquare {
-    border: 4px solid var(--primary-color);
+    background: #ffffff;
+    border: 8px solid var(--primary-color);
     width: 150px;
     height: 150px;
     transform: skew(20deg);    
@@ -254,7 +290,11 @@ body{
     margin: 0 auto;
     box-shadow: none;
     position: relative;
+}
 
+.progress-value {
+    font-size: 5rem;
+    color: var(--gray-color);
 }
 .progress:after{
     content: "";
@@ -428,6 +468,16 @@ body{
     width: 40%;
     vertical-align: middle;
 }
+.graphItem p {
+    padding-top: .5rem;
+}
+
+.graphItem span {
+    font-size: 1.3rem;
+    padding: 2rem;
+    color: var(--primary-color);
+    font-weight: bold;
+}
 
 .graphbarInner {
     padding: 3rem 0;
@@ -455,16 +505,20 @@ body{
 }
 
 .graphbarInner .graphItem:nth-of-type(1) .graph-bar {
-    width: 80%;
+    width: 88%;
+    transition: linear 1s;
 }
 .graphbarInner .graphItem:nth-of-type(2) .graph-bar {
     width: 90%;
+    transition: linear 2s;
 }
 .graphbarInner .graphItem:nth-of-type(3) .graph-bar {
-    width: 70%;
+    width: 80%;
+    transition: linear 3s;
 }
 .graphbarInner .graphItem:nth-of-type(4) .graph-bar {
-    width: 80%;
+    width: 86%;
+    transition: linear 4s;
 }
 
 
@@ -472,6 +526,84 @@ body{
 /* =======================  works  ============================= */
 
 .workstitle {
-text-align: center;
+    width: 100%;
+    text-align: center;
+    padding-left: -4rem;
 
+}
+.content_title {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    padding: 1rem;
+    /* border-radius: 50%; */
+    box-shadow: 1px 3px 5px 2px;
+    /* color: var(--gray-color) */
+    width: 400px;
+    background: rgb(255, 255, 255);
+    margin: 0 auto;
+}
+
+
+/* =======================  works-design  ============================= */
+
+
+.designcontents {
+    width: 100%;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.designcontents .cardItem {
+    display: inline-block;
+    position: relative;
+    width: 500px;
+    height: 500px;
+    margin: 0 auto;
+}
+.designcontents .cardItem:hover:before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,.2);
+    /* z-index: 1; */
+}
+.designcontents .cardItem img {
+    /* width: 300px; */
+}
+.designcontents .cardItem h1 {
+    position: absolute;
+    line-height: 1;
+    top: -1.2em;
+    left: 20px;
+    transition: .7s;
+    opacity: 0;
+    color: #fff;
+}
+.designcontents .cardItem:hover h1 {
+    top: 50%;
+    opacity: 1;
+    /* z-index: -1; */
+}
+.designcontents .cardItem p {
+    position: absolute;
+    left: 0;
+    line-height: 1;
+    bottom: -1em;
+    left: 20px;
+    transition: .7s;
+    opacity: 0;
+    color: #fff;
+}
+.designcontents .cardItem:nth-child(2) {
+    vertical-align: top;
+}
+.designcontents .cardItem:hover p {
+    bottom: 35%;
+    opacity: 1;
 }
