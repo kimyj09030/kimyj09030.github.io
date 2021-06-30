@@ -17,7 +17,6 @@ section {
 }
 /* ============= slider__custom ============== */
 .slider__custom {
-    border: 1px solid red;
     position: absolute;
     padding-top: 8.5rem;
 }
