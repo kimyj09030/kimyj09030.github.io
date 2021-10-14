@@ -4,7 +4,7 @@ $(function(){
   
     new fullpage('#fullpage', {
         //options here
-        anchors:['firstPage', 'secondPage', , 'thirdPage', 'fourthPage'],
+        anchors:['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'],
         menu: '#gnb',
         autoScrolling:true,
         scrollHorizontally: true,

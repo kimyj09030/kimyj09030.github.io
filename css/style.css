@@ -4,12 +4,14 @@
 
 
 /* fonts */
+
 @font-face {
     font-family: 'GmarketSansMedium';
     src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansMedium.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+
 
 
 
@@ -69,15 +71,38 @@ header {
 .nav_list li{
     margin-right: 5rem;
 }
+.nav_list li a {
+    display: inline-block;
+    position: relative;
+}
+.nav_list li a::before {
+    content: "";
+    width: 1px;
+    height: 5px;
+    background: var(--primary-color);
+    /* opacity: .5; */
+    position: absolute;
+    bottom: 0;
+    transition: .5s;
+    visibility: hidden;
+}
+
+
+
+.nav_list li a:hover:before {
+    visibility: visible;
+    width: 100%;
+}
 
 /* =========================  Intro  ============================= */
 #intro {
-    background: url(../img/first-bgimg.jpg) no-repeat center/cover;
+    background: url(../img/main_page.png) no-repeat center/cover;
 }
 .intro_title {
     font-size: 5em;
     color: var(--primary-color);
     text-align: center;
+
 }
 .intro_subtitle {
     text-align: center;
@@ -93,7 +118,14 @@ header {
     text-align: center;
     width: 200px;
     margin: 0 auto;
-    margin-top: 1.5rem;
+    margin-top: 2rem;
+    font-weight: bold;
+    background: #ffffff;
+}
+
+.more_box:hover {
+    color: var(--primary-color);
+    border: 2px solid var(--primary-color);
 }
 
 .footer_text {
@@ -109,9 +141,12 @@ header {
 
 
 /* =========================  about  ============================= */
-
+.about .inner{
+    font-family: 'GmarketSansMedium';
+}
 .myintroduce_box {
-    margin-top: 3rem;
+    margin-left: -1rem;
+    margin-top: 11rem;
     display: inline-block;
     width: 350px;
     padding: 1rem;
@@ -119,7 +154,6 @@ header {
 .myimage_box {
     width: 300px;
     height: 360px;
-    /* background: #bebaba; */
     margin: 0 auto;
 }
 .myimage_box img {
@@ -148,7 +182,7 @@ li i {
 li h3 {
     color: var(--primary-color);
     margin-bottom: 1rem;
-    font-weight: bold;
+    font-weight: bolder;
 }
 .diamond {
     position: relative;
@@ -189,9 +223,10 @@ li h3 {
 }
 
 .profile_box {
+    /* border: 1px solid red; */
     display: inline-block;
     margin: 0 auto;
-    margin-left: 8.5rem;
+    margin-left: 9rem;
 }
 .profile {
     margin-bottom: 5rem;
@@ -207,7 +242,6 @@ li h3 {
 
 .about_icons {
 display: inline-block;
-
 }
 
 .icons_list {
@@ -215,11 +249,14 @@ display: inline-block;
 
 }
 .icons_list_item {
+    position: relative;
+    left: 8%;
     display: inline-block;
     width: 49%;
     text-align: center;
     padding: 3rem;
 }
+
 .square {
 }
 
@@ -266,6 +303,7 @@ display: inline-block;
 }
 .row {
     display: inline-block;
+    margin-top: 3.5rem;
 }
 .skill {
     width: 50%;
@@ -274,12 +312,8 @@ display: inline-block;
     border-bottom: 15px solid #c9caca;
     padding-left: 4rem;
 }
-
-body{
-    /* background-color: #333; */
-    margin: 10%;
-    margin-left: 30%;
-
+.skills .inner {
+    font-family: 'GmarketSansMedium';
 }
 /* =======================  skills - progress  ============================= */
 .progress{
@@ -473,7 +507,7 @@ body{
 }
 
 .graphItem span {
-    font-size: 1.3rem;
+    font-size: 1.1rem;
     padding: 2rem;
     color: var(--primary-color);
     font-weight: bold;
@@ -532,24 +566,30 @@ body{
 
 }
 .content_title {
+    font-family: 'GmarketSansMedium';
     position: absolute;
     top: 25%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
     padding: 1rem;
-    /* border-radius: 50%; */
-    box-shadow: 1px 3px 5px 2px;
-    /* color: var(--gray-color) */
+    border-radius: 15px;
+    box-shadow: .5px 3px 10px 1px;
     width: 400px;
     background: rgb(255, 255, 255);
     margin: 0 auto;
+    color: var(--gray-color);
+}
+.works .inner {
+    font-family: 'GmarketSansMedium';
 }
 
 
 /* =======================  works-design  ============================= */
 
-
+.works_design .inner {
+    font-family: 'GmarketSansMedium';
+}
 .designcontents {
     width: 100%;
     position: absolute;
@@ -614,6 +654,7 @@ body{
     width: 100%;
 }
 .contact .inner {
+    font-family: 'GmarketSansMedium';
     border: 15px solid var(--lightgray-color);
     height: 750px;
 }
@@ -625,7 +666,7 @@ body{
 }
 
 .contactbox h1 {
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: var(--primary-color);
     padding-bottom: 2rem;
@@ -641,10 +682,11 @@ body{
 }
 
 #thx {
-    background: url(../img/last-img.jpg);
+    background: url(../img/lllast.jpg)
 }
 .lastgreeting {
+    font-family: 'GmarketSansMedium';
     text-align: center;
-    font-size: 5rem;
+    font-size: 4rem;
     color: var(--gray-color);
 }
